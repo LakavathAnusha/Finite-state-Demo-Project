@@ -9,25 +9,17 @@ public sealed class GameController
     {
         get
         {
-            if(instance==null)
+            if (instance == null)
             {
                 instance = new GameController();
                 instance.Checkpoints.AddRange(GameObject.FindGameObjectsWithTag("Checkpoint"));
             }
+            return instance;
         }
-        return instance;
-    }
-    private List<GameObject> Checkpoints = new List<GameObject>();
-    public List<GameObject> Checkpoints { get { return Checkpoints; } }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
+    private List<GameObject> checkpoints = new List<GameObject>();
+    public List<GameObject> Checkpoints { get { return checkpoints; } }
+    // Start is called before the first frame update
+
 }
