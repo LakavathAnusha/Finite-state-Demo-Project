@@ -166,8 +166,8 @@ public class Patrol : State
             agent.SetDestination(GameController.Instance.Checkpoints[currentIndex].transform.position);
 
         }
-        //base.UpdateMethod();
-
+       
+       //base.UpdateMethod();
     }
     public override void ExitMethod()
     {
